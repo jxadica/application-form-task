@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+    <form action="">
+        <div style="display: flex; justify-content: space-between;">
+            <label for="">Firstname</label>
+            <input type="text" class="firstName" required>
+            <label for="">Surname</label>
+            <input type="text" class="surname" required><br>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <label for="">Date of Birth</label>
+            <input type="date" class="date" required>
+            <label for="">Age</label>
+            <input type="number" class="age" required>
+                <br>
+        </div>
+        <div>
+
+            <label for="">Gender</label>
+            <select name="" id="gender" style="width: 200px; margin-left:65px; padding: 10px;" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+        </div>
+<div>
+    <label for="">Email</label>
+    <input type="email" class="email" required>
+</div>
+<br>
+<div class="pos">
+    <label for="">Positions Available: </label>
+    <input type="radio" name="positions" value="Junior Developer">
+    <label for="junior">Junior Developer</label>
+    <input type="radio" name="positions" value="Middle Developer">
+    <label for="middle">Mid-level Developer</label>
+    <input type="radio" name="positions" value="Senior Developer">
+    <label for="senior">Senior Developer</label>
+</div>
+<div class="la">
+    <label for="">Programming languages: </label>
+    <input type="checkbox" value="java" class="language">
+    <label for="java">Java</label>
+    <input type="checkbox" value="javascript" class="language">
+    <label for="javascript">JavaScript</label>
+    <input type="checkbox" value="python" class="language">
+    <label for="python">Python</label>
+    <br>
+</div>
+<div style="display: flex; justify-content: space-between;">
+    <label>Password:</label>
+    <input type="password" class="pass" minlength="6" required>
+    <label>Confirm Password:</label>
+    <input type="password" class="confPass" minlength="6" required>
+</div>
+    <br>
+    <div style="display: flex; justify-content: space-evenly;">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button class="showCard">My Card</button>
+    </div>
+</form>
+<div class="card">
+    <h2>Personal informations</h2>
+    <div>
+        <h3>Name,Surname:</h3>
+        <p class="cardName"></p>
+    </div>
+    <div>
+        <h3>Birthday:</h3>
+        <p class="cardBirthday">
+
+        </p>
+    </div>
+    <div>
+       <h3>Email:</h3>
+        <p class="cardEmail"></p>
+    </div>
+    <div>
+        <h3>Age:</h3>
+         <p class="cardAge"></p>
+     </div>
+     <div>
+        <h3>Password:</h3>
+         <p class="cardPass"></p>
+     </div>        
+    
+     <button class="cardClose">Close</button>
+</div>
+</div> 
+<script src="app.js"></script>
+</body>
+</html>

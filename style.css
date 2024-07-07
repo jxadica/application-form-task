@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    height: 100%;
+    background-color: lightblue;
+}
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+    /* font-weight: bolder; */
+}
+form{
+    display: grid;
+    gap: 10px;
+   /* text-align: center; */
+   width: 65%;
+   padding: 20px;
+}
+label{
+    font-size: 28px;
+}
+input{
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgb(73, 73, 145);
+}
+.email, .pass, .confPass {
+    width: 300px;
+} 
+button{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(108, 195, 224);
+}
+
+.card{
+    background-color: aliceblue;
+    padding: 40px;
+    width: 400px;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card div {
+    display: flex;
+    align-items: center;
+}
+.card h2{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(108, 195, 224);
+}
+.card h3 {
+    font-size: 25px;
+    margin-right: 15px;
+}
+.card p {
+    font-size: 23px;
+    font-style: italic;
+}
+.cardClose {
+    margin-top: 20px;
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    color: white;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
